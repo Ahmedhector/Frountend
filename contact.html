@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الدعم والتواصل</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div>
+      <div class="navbar container">
+        <img src="./images/logo-white.svg" alt="Logo" class="logo" />
+        <nav>
+          <ul class="nav-links links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="courses.html">الدورات التدريبية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="contact.html" class="active">الدعم والتواصل</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <button id="signupButton" onclick="navigateTo('signup.html')">
+            انشاء حساب
+          </button>
+          <button id="loginButton" onclick="navigateTo('login.html')">
+            تسجيل الدخول
+          </button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="courses.html">الدورات التدريبية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">الدعم والتواصل</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ABOUT HERO SECTION -->
+    <section class="about-hero">
+      <div class="overlay">
+        <div class="about-content container">
+          <h1>الدعم والتواصل</h1>
+          <p><a href="index.html">الرئيسية</a> / الدعم والتواصل</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION EXACT LAYOUT -->
+    <section class="contact-cards">
+      <div class="contact-cards__container container">
+        <!-- Right side -->
+        <div class="contact-cards__right">
+          <div class="contact-cards__info">
+            <h4 class="contact-cards__label">
+              <i class="fas fa-comments contact-cards__label-icon"></i>
+              المحادثة الفورية
+            </h4>
+            <p class="contact-cards__note">
+              يمكننا مساعدتكم من خلال المحادثة الفورية
+            </p>
+            <span class="contact-cards__note"
+              >من السبت إلى الخميس من الساعة 9 حتى 5 مساءً</span
+            >
+          </div>
+
+          <div class="contact-cards__info">
+            <h4 class="contact-cards__label">
+              <i class="fas fa-map-marker-alt contact-cards__label-icon"></i>
+              فروعنا
+            </h4>
+            <p class="contact-cards__note">
+              الرياض، حي الملقا، طريق أنس بن مالك، مجمع ريادة، الرياض 13784
+            </p>
+            <span class="contact-cards__note"
+              >من السبت إلى الخميس من الساعة 9 حتى 5 مساءً</span
+            >
+          </div>
+
+          <div class="contact-cards__info">
+            <h4 class="contact-cards__label">
+              <i class="fas fa-phone contact-cards__label-icon"></i>
+              اتصل بنا
+            </h4>
+            <a href="tel:01018283280" class="contact-cards__value"
+              >01018283280</a
+            >
+            <span class="contact-cards__note"
+              >الوقت المتوقع للرد أقل من دقيقة</span
+            >
+          </div>
+        </div>
+
+        <!-- Left side -->
+        <div class="contact-cards__left">
+          <a href="mailto:futuredroop@gmail.com" class="contact-cards__card">
+            <i class="fas fa-envelope contact-cards__icon"></i>
+            <h4 class="contact-cards__title">البريد الإلكتروني</h4>
+            <p class="contact-cards__value">futuredroop@gmail.com</p>
+            <span class="contact-cards__note"
+              >من السبت إلى الخميس، من الساعة 9 حتى 5 مساءً</span
+            >
+          </a>
+
+          <a href="mailto:futuredroop@gmail.com" class="contact-cards__card">
+            <i class="fas fa-envelope contact-cards__icon"></i>
+            <h4 class="contact-cards__title">البريد الإلكتروني</h4>
+            <p class="contact-cards__value">futuredroop@gmail.com</p>
+            <span class="contact-cards__note"
+              >من السبت إلى الخميس، من الساعة 9 حتى 5 مساءً</span
+            >
+          </a>
+
+          <a
+            href="https://wa.me/966500328206"
+            target="_blank"
+            class="contact-cards__card contact-cards__card--wide"
+          >
+            <i class="fab fa-whatsapp contact-cards__icon"></i>
+            <h4 class="contact-cards__title">تواصل عبر الواتساب</h4>
+            <p class="contact-cards__value">whatsappme.link</p>
+            <span class="contact-cards__note"
+              >من السبت إلى الخميس، من الساعة 9 حتى 5 مساءً</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+      <div class="stats__overlay">
+        <div class="stats__container container">
+          <!-- Statistic 1 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="35">0</h2>
+            <p class="stats__text">مدرب</p>
+          </div>
+
+          <!-- Statistic 2 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="500">0</h2>
+            <p class="stats__text">دورة تدريبية</p>
+          </div>
+
+          <!-- Statistic 3 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="36">0</h2>
+            <p class="stats__text">عضو مؤسسة</p>
+          </div>
+
+          <!-- Statistic 4 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="985">0</h2>
+            <p class="stats__text">إجماليات الطلاب</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <!-- About Section -->
+        <div class="footer__about">
+          <img
+            src="/images/logo.svg"
+            alt="Logo"
+            class="footer__logo"
+            width="50"
+            height="50"
+          />
+          <p class="footer__description">
+            نص شكلي بعض ان الغاية هي الشكل ليس المحتوى ويستخدم في صناعات المطابع
+            ودور النشر كان لوريم ايبسوم
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__links">
+          <h3 class="footer__title">ارتباطات سريعة</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">الرئيسية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i>
+              <a href="#">الدورات التدريبية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Site Links -->
+        <div class="footer__links">
+          <h3 class="footer__title">ارتباطات الموقع</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">سياسة الخصوصية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">إخلاء المسؤولية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">شروط وأوضاع</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i>
+              <a href="#">ملفات تعريف الارتباط</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer__contact">
+          <h3 class="footer__title">تواصل معنا</h3>
+          <ul class="footer__contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية،
+              الطائف
+            </li>
+            <li><i class="fas fa-envelope"></i> futureDrop@Email.com</li>
+            <li><i class="fas fa-phone"></i> +96654735928</li>
+          </ul>
+          <div class="footer__social">
+            <span>تابعنا:</span>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer__bottom">
+        <p>© جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

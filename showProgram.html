@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الدورات التدريبية</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/showProgram.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div>
+      <div class="navbar container">
+        <img src="./images/logo-white.svg" alt="Logo" class="logo" />
+        <nav>
+          <ul class="nav-links links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="courses.html" class="active">الدورات التدريبية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="contact.html">الدعم والتواصل</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <button id="signupButton" onclick="navigateTo('signup.html')">
+            انشاء حساب
+          </button>
+          <button id="loginButton" onclick="navigateTo('login.html')">
+            تسجيل الدخول
+          </button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="courses.html" class="active">الدورات التدريبية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">الدعم والتواصل</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ABOUT HERO SECTION -->
+    <section class="about-hero">
+      <div class="overlay">
+        <div class="about-content container">
+          <h1>دورة تطوير تطبيقات الهاتف</h1>
+          <p><a href="index.html">الرئيسية</a> / دورة تطوير تطبيقات الهاتف</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="program container">
+      <div class="program__grid">
+        <!-- RIGHT SIDEBAR -->
+        <div class="program__right">
+          <div class="program__box">
+            <h3 class="program__box-title">تفاصيل الكورس</h3>
+            <p class="program__box-desc">
+              ابدأ رحلتك نحو احتراف تصميم وتطوير واجهات المستخدم التفاعلية
+              والحديثة في مسار تطوير الواجهة الأمامية. ابدأ رحلتك نحو احتراف
+              تصميم وتطوير واجهات المستخدم التفاعلية والحديثة في مسار تطوير
+              الواجهة الأمامية.
+            </p>
+
+            <hr class="program__divider" />
+
+            <div class="program__details-list">
+              <div class="program__details-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>عدد المستويات: ٥ مستويات</span>
+              </div>
+              <div class="program__details-item">
+                <i class="fas fa-video"></i>
+                <span>عدد الحصص: ٢٠ حصة</span>
+              </div>
+              <div class="program__details-item">
+                <i class="fas fa-user"></i>
+                <span>المدرب: محمد علي</span>
+              </div>
+            </div>
+
+            <hr class="program__divider" />
+
+            <ul class="program__features">
+              <li><i class="fas fa-check-square"></i> حصص مباشرة</li>
+              <li><i class="fas fa-check-square"></i> مشاريع عملية</li>
+            </ul>
+
+            <a href="#" class="program__btn">اشترك الآن</a>
+          </div>
+        </div>
+
+        <!-- LEFT -->
+        <div class="program__left">
+          <!-- Video -->
+          <div class="program__video">
+            <video id="course-video" poster="images/poster.png">
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <button class="program__play play-button" onclick="playVideo()">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+
+          <h2 class="program__title">تعرف على الكورس</h2>
+
+          <h3 class="program__subtitle">ماذا ستتعلم؟</h3>
+
+          <p class="program__text">
+            خلال هذه الدورة الشاملة، ستتعلم كل ما تحتاجه لتصبح مطور واجهات
+            أمامية محترفًا، بدءًا من الأساسيات وصولًا إلى التقنيات المتقدمة:
+          </p>
+
+          <!-- Course Content -->
+          <div class="program__modules">
+            <div class="program__module">
+              <h4 class="program__module-title">1. HTML و CSS</h4>
+              <ul>
+                <li>بناء صفحات الويب باستخدام HTML.</li>
+                <li>تصميم وتنسيق المواقع باستخدام CSS.</li>
+                <li>إنشاء تصميمات متجاوبة تعمل على جميع الأجهزة.</li>
+              </ul>
+            </div>
+
+            <div class="program__module">
+              <h4 class="program__module-title">2. JavaScript</h4>
+              <ul>
+                <li>تعلم أساسيات البرمجة باستخدام JavaScript.</li>
+                <li>التفاعل مع عناصر الصفحة باستخدام DOM.</li>
+                <li>إدارة أحداث المستخدم مثل النقر والإدخال.</li>
+              </ul>
+            </div>
+
+            <div class="program__module">
+              <h4 class="program__module-title">3. React.js</h4>
+              <ul>
+                <li>بناء واجهات تفاعلية باستخدام مكتبة React.js.</li>
+                <li>إدارة البيانات باستخدام State Management.</li>
+                <li>التفاعل مع واجهات برمجة التطبيقات (APIs).</li>
+              </ul>
+            </div>
+
+            <div class="program__module">
+              <h4 class="program__module-title">4. أدوات المطورين</h4>
+              <ul>
+                <li>استخدام Git و GitHub لإدارة المشاريع.</li>
+                <li>تحسين بيئة التطوير باستخدام Webpack و Babel.</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="program__text program__text--end">
+            بنهاية الدورة، ستتمكن من تصميم وتطوير مواقع ويب وتطبيقات تفاعلية
+            احترافية!
+          </p>
+
+          <!-- Skills -->
+          <h3 class="program__subtitle">المهارات التي ستكتسبها</h3>
+          <div class="program__tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>API</span>
+            <span>State Management</span>
+            <span>ReactJs</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+          </div>
+
+          <!-- Accordion -->
+          <h3 class="program__subtitle">محتويات الكورس</h3>
+
+          <div class="program__accordion">
+            <details open>
+              <summary>المستوى الأول: أساسيات تطوير الويب</summary>
+              <div class="program__content">test one</div>
+            </details>
+            <details>
+              <summary>المستوى الثاني: بناء هيكل وتصميم المواقع</summary>
+              <div class="program__content">test two</div>
+            </details>
+            <details>
+              <summary>المستوى الثالث: تطوير مواقع ديناميكية</summary>
+              <div class="program__content">three</div>
+            </details>
+            <details>
+              <summary>المستوى الرابع: انتقال لـ React وأدوات المطورين</summary>
+              <div class="program__content">four</div>
+            </details>
+            <details>
+              <summary>المستوى الخامس: مشروع عملي وتطبيقات واقعية</summary>
+              <div class="program__content">five</div>
+            </details>
+          </div>
+
+          <!-- Instructor -->
+          <h3 class="program__subtitle">المدرب لهذا الكورس</h3>
+          <div class="program__trainer">
+            <img src="./images/user.svg" alt="mentor" />
+            <div>
+              <h4>محمد علي</h4>
+              <p>خبير تطوير واجهات تفاعلية ومتقدم في مجال الويب</p>
+              <p>
+                محمد له خبرة تزيد عن 10 سنوات في بناء مشاريع تدريبية واقعية.
+                درّب أكثر من 3K متعلم في مجال الـ Front-End Development، مع خبرة
+                في HTML, CSS3, JavaScript, React.js وأدوات المطورين.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+      <div class="stats__overlay">
+        <div class="stats__container container">
+          <!-- Statistic 1 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="35">0</h2>
+            <p class="stats__text">مدرب</p>
+          </div>
+
+          <!-- Statistic 2 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="500">0</h2>
+            <p class="stats__text">دورة تدريبية</p>
+          </div>
+
+          <!-- Statistic 3 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="36">0</h2>
+            <p class="stats__text">عضو مؤسسة</p>
+          </div>
+
+          <!-- Statistic 4 -->
+          <div class="stats__item">
+            <h2 class="stats__number" data-target="985">0</h2>
+            <p class="stats__text">إجماليات الطلاب</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <!-- About Section -->
+        <div class="footer__about">
+          <img
+            src="/images/logo.svg"
+            alt="Logo"
+            class="footer__logo"
+            width="50"
+            height="50"
+          />
+          <p class="footer__description">
+            نص شكلي بعض ان الغاية هي الشكل ليس المحتوى ويستخدم في صناعات المطابع
+            ودور النشر كان لوريم ايبسوم
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__links">
+          <h3 class="footer__title">ارتباطات سريعة</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">الرئيسية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i>
+              <a href="#">الدورات التدريبية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Site Links -->
+        <div class="footer__links">
+          <h3 class="footer__title">ارتباطات الموقع</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">سياسة الخصوصية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">إخلاء المسؤولية</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i> <a href="#">شروط وأوضاع</a>
+            </li>
+            <li class="footer__list-item">
+              <i class="fas fa-angle-left"></i>
+              <a href="#">ملفات تعريف الارتباط</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer__contact">
+          <h3 class="footer__title">تواصل معنا</h3>
+          <ul class="footer__contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية،
+              الطائف
+            </li>
+            <li><i class="fas fa-envelope"></i> futureDrop@Email.com</li>
+            <li><i class="fas fa-phone"></i> +96654735928</li>
+          </ul>
+          <div class="footer__social">
+            <span>تابعنا:</span>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer__bottom">
+        <p>© جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <script src="./js/courseData.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
